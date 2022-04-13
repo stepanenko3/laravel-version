@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-    <a href="https://packagist.org/packages/stepanenko3/version"><img alt="Latest Stable Version" src="https://img.shields.io/packagist/v/stepanenko3/version.svg?style=flat-square"></a>
+    <a href="https://packagist.org/packages/stepanenko3/laravel-version"><img alt="Latest Stable Version" src="https://img.shields.io/packagist/v/stepanenko3/laravel-version.svg?style=flat-square"></a>
     <a href="/antonioribeiro/version/blob/master/LICENSE.md"><img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square"></a>
     <a href="https://scrutinizer-version.com/g/antonioribeiro/version/?branch=master"><img alt="Code Quality" src="https://img.shields.io/scrutinizer/g/antonioribeiro/version.svg?style=flat-square"></a>
     <a href="https://scrutinizer-version.com/g/antonioribeiro/version/?branch=master"><img alt="Build" src="https://img.shields.io/scrutinizer/build/g/antonioribeiro/version.svg?style=flat-square"></a>
@@ -14,7 +14,7 @@
 <p align="center">
     <a href="https://scrutinizer-version.com/g/antonioribeiro/version/?branch=master"><img alt="Coverage" src="https://img.shields.io/scrutinizer/coverage/g/antonioribeiro/version.svg?style=flat-square"></a>
     <a href="https://styleci.io/repos/112244465"><img alt="StyleCI" src="https://styleci.io/repos/112244465/shield"></a>
-    <a href="https://packagist.org/packages/stepanenko3/version"><img alt="Downloads" src="https://img.shields.io/packagist/dt/stepanenko3/version.svg?style=flat-square"></a>
+    <a href="https://packagist.org/packages/stepanenko3/laravel-version"><img alt="Downloads" src="https://img.shields.io/packagist/dt/stepanenko3/laravel-version.svg?style=flat-square"></a>
 </p>
 
 ## Description
@@ -437,7 +437,7 @@ You can test it online: https://regex101.com/r/Ly7O1x/42
 Via Composer
 
 ``` bash
-$ composer require stepanenko3/version
+$ composer require stepanenko3/laravel-version
 ```
 
 Then publish the configuration file you'll have to:
