@@ -3,14 +3,14 @@
 namespace Stepanenko3\Version\Package\Support;
 
 use Illuminate\Support\Collection;
-use Stepanenko3\Yaml\Package\Yaml;
+use PragmaRX\Yaml\Package\Yaml;
 
 class Config
 {
     /**
      * The config loader.
      *
-     * @var \Stepanenko3\Yaml\Package\Yaml
+     * @var \PragmaRX\Yaml\Package\Yaml
      */
     protected $yaml;
 

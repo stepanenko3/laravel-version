@@ -4,7 +4,7 @@ namespace Stepanenko3\Version\Tests;
 
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
 use Stepanenko3\Version\Package\ServiceProvider as VersionServiceProvider;
-use Stepanenko3\Yaml\Package\ServiceProvider as YamlServiceProvider;
+use PragmaRX\Yaml\Package\ServiceProvider as YamlServiceProvider;
 
 abstract class TestCase extends OrchestraTestCase
 {

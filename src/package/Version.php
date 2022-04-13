@@ -10,12 +10,12 @@ use Stepanenko3\Version\Package\Support\Constants;
 use Stepanenko3\Version\Package\Support\Git;
 use Stepanenko3\Version\Package\Support\Increment;
 use Stepanenko3\Version\Package\Support\Timestamp;
-use Stepanenko3\Yaml\Package\Yaml;
+use PragmaRX\Yaml\Package\Yaml;
 
 class Version
 {
     /**
-     * @var \Stepanenko3\Yaml\Package\Yaml
+     * @var \PragmaRX\Yaml\Package\Yaml
      */
     protected $yaml;
 

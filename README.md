@@ -500,8 +500,8 @@ composer install
 
 ## Credits
 
-[Artem Stepanenko](http://twitter.com/stepanenko3)
-[Antonio Carlos Ribeiro](http://twitter.com/iantonioribeiro)
+- [Artem Stepanenko](http://twitter.com/stepanenko3)
+- [Antonio Carlos Ribeiro](http://twitter.com/iantonioribeiro)
 
 ## License
 

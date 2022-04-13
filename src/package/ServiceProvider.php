@@ -14,7 +14,7 @@ use Stepanenko3\Version\Package\Console\Commands\Timestamp;
 use Stepanenko3\Version\Package\Console\Commands\Version as VersionCommand;
 use Stepanenko3\Version\Package\Support\Config;
 use Stepanenko3\Version\Package\Support\Constants;
-use Stepanenko3\Yaml\Package\Yaml;
+use PragmaRX\Yaml\Package\Yaml;
 
 class ServiceProvider extends IlluminateServiceProvider
 {
