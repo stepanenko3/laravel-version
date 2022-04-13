@@ -11,6 +11,8 @@
     <a href="https://packagist.org/packages/stepanenko3/laravel-version"><img alt="Downloads" src="https://img.shields.io/packagist/dt/stepanenko3/laravel-version.svg?style=flat-square"></a>
 </p>
 
+Original repository https://github.com/antonioribeiro/version
+
 ## Description
 
 This package is a Laravel (5.5+) utility which helps you keep and manage your application version, increment version numbers (major, minor, patch, commit), and can also use your last commit hash.
