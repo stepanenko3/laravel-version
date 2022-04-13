@@ -1,16 +1,16 @@
 <?php
 
-namespace PragmaRX\Version\Tests;
+namespace Stepanenko3\Version\Tests;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Blade;
-use PragmaRX\Version\Package\Exceptions\GitTagNotFound;
-use PragmaRX\Version\Package\Exceptions\MethodNotFound;
-use PragmaRX\Version\Package\Facade as VersionFacade;
-use PragmaRX\Version\Package\Support\Constants;
-use PragmaRX\Version\Package\Version;
-use PragmaRX\Version\Package\Version as VersionService;
+use Stepanenko3\Version\Package\Exceptions\GitTagNotFound;
+use Stepanenko3\Version\Package\Exceptions\MethodNotFound;
+use Stepanenko3\Version\Package\Facade as VersionFacade;
+use Stepanenko3\Version\Package\Support\Constants;
+use Stepanenko3\Version\Package\Version;
+use Stepanenko3\Version\Package\Version as VersionService;
 
 class VersionTest extends TestCase
 {
@@ -218,7 +218,7 @@ class VersionTest extends TestCase
     {
         $this->assertEquals(
             $this->getFormattedVersion('version %s.%s.%s (commit %s)'),
-            app('pragmarx.version')->format('full')
+            app('stepanenko3.version')->format('full')
         );
     }
 

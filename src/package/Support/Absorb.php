@@ -1,9 +1,9 @@
 <?php
 
-namespace PragmaRX\Version\Package\Support;
+namespace Stepanenko3\Version\Package\Support;
 
 use Carbon\Carbon;
-use PragmaRX\Version\Package\Version;
+use Stepanenko3\Version\Package\Version;
 
 class Absorb
 {

@@ -1,36 +1,36 @@
 <?php
 
-namespace PragmaRX\Version\Package;
+namespace Stepanenko3\Version\Package;
 
 use Illuminate\Support\Str;
-use PragmaRX\Version\Package\Exceptions\MethodNotFound;
-use PragmaRX\Version\Package\Support\Absorb;
-use PragmaRX\Version\Package\Support\Config;
-use PragmaRX\Version\Package\Support\Constants;
-use PragmaRX\Version\Package\Support\Git;
-use PragmaRX\Version\Package\Support\Increment;
-use PragmaRX\Version\Package\Support\Timestamp;
-use PragmaRX\Yaml\Package\Yaml;
+use Stepanenko3\Version\Package\Exceptions\MethodNotFound;
+use Stepanenko3\Version\Package\Support\Absorb;
+use Stepanenko3\Version\Package\Support\Config;
+use Stepanenko3\Version\Package\Support\Constants;
+use Stepanenko3\Version\Package\Support\Git;
+use Stepanenko3\Version\Package\Support\Increment;
+use Stepanenko3\Version\Package\Support\Timestamp;
+use Stepanenko3\Yaml\Package\Yaml;
 
 class Version
 {
     /**
-     * @var \PragmaRX\Yaml\Package\Yaml
+     * @var \Stepanenko3\Yaml\Package\Yaml
      */
     protected $yaml;
 
     /**
-     * @var \PragmaRX\Version\Package\Support\Config
+     * @var \Stepanenko3\Version\Package\Support\Config
      */
     protected $config;
 
     /**
-     * @var \PragmaRX\Version\Package\Support\Git
+     * @var \Stepanenko3\Version\Package\Support\Git
      */
     protected $git;
 
     /**
-     * @var \PragmaRX\Version\Package\Support\Increment
+     * @var \Stepanenko3\Version\Package\Support\Increment
      */
     protected $increment;
 
@@ -137,7 +137,7 @@ class Version
         $absorb,
         $timestamp
     ) {
-        $yaml = $this->instantiateClass($yaml ?: app('pragmarx.yaml'), 'yaml');
+        $yaml = $this->instantiateClass($yaml ?: app('stepanenko3.yaml'), 'yaml');
 
         $config = $this->instantiateClass($config, 'config', Config::class, [
             $yaml,

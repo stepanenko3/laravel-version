@@ -1,6 +1,6 @@
 <?php
 
-namespace PragmaRX\Version\Package\Console\Commands;
+namespace Stepanenko3\Version\Package\Console\Commands;
 
 class Timestamp extends Base
 {
@@ -24,7 +24,7 @@ class Timestamp extends Base
     public function handle()
     {
         if ($this->checkIfCanIncrement('current', 'timestamp')) {
-            $number = app('pragmarx.version')->timestampToConfig();
+            $number = app('stepanenko3.version')->timestampToConfig();
 
             $this->info("New timestamp: {$number}");
 

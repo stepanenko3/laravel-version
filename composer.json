@@ -1,5 +1,5 @@
 {
-    "name": "pragmarx/version",
+    "name": "stepanenko3/version",
     "description": "Take control over your Laravel app version",
     "keywords": [
         "laravel",
@@ -8,6 +8,11 @@
     ],
     "license": "MIT",
     "authors": [
+        {
+            "name": "Artem Stepanenko",
+            "email": "stpnnk.artem@gmail.com",
+            "role": "Creator & Designer"
+        },
         {
             "name": "Antonio Carlos Ribeiro",
             "email": "acr@antoniocarlosribeiro.com",
@@ -18,26 +23,26 @@
         "php": ">=7.0",
         "laravel/framework": ">=5.5.33",
         "pragmarx/yaml": "^1.0",
-        "symfony/process": "^3.3|^4.0|^5.0"
+        "symfony/process": "^3.3|^4.0|^5.0|^6.0"
     },
     "require-dev": {
         "phpunit/phpunit": "~5|~6|~7|~8|~9",
-        "orchestra/testbench": "3.4.*|3.5.*|3.6.*|3.7.*|4.*|5.*|6.*"
+        "orchestra/testbench": "3.4.*|3.5.*|3.6.*|3.7.*|4.*|5.*|6.*|7.*"
     },
     "autoload": {
         "psr-4": {
-            "PragmaRX\\Version\\Package\\": "src/package",
-            "PragmaRX\\Version\\Tests\\": "tests/"
+            "Stepanenko3\\Version\\Package\\": "src/package",
+            "Stepanenko3\\Version\\Tests\\": "tests/"
         }
     },
     "extra": {
         "component": "package",
         "laravel": {
             "providers": [
-                "PragmaRX\\Version\\Package\\ServiceProvider"
+                "Stepanenko3\\Version\\Package\\ServiceProvider"
             ],
             "aliases": {
-                "Version": "PragmaRX\\Version\\Package\\Facade"
+                "Version": "Stepanenko3\\Version\\Package\\Facade"
             }
         }
     },

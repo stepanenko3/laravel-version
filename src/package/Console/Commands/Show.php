@@ -1,6 +1,6 @@
 <?php
 
-namespace PragmaRX\Version\Package\Console\Commands;
+namespace Stepanenko3\Version\Package\Console\Commands;
 
 class Show extends Base
 {
@@ -29,6 +29,6 @@ class Show extends Base
             ? ''
             : config('app.name').' ';
 
-        $this->info($appName.app('pragmarx.version')->format($format));
+        $this->info($appName.app('stepanenko3.version')->format($format));
     }
 }

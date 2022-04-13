@@ -1,6 +1,6 @@
 <?php
 
-namespace PragmaRX\Version\Package\Support;
+namespace Stepanenko3\Version\Package\Support;
 
 use Illuminate\Support\Facades\Cache as IlluminateCache;
 

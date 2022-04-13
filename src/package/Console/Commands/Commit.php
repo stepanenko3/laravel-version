@@ -1,6 +1,6 @@
 <?php
 
-namespace PragmaRX\Version\Package\Console\Commands;
+namespace Stepanenko3\Version\Package\Console\Commands;
 
 class Commit extends Base
 {
@@ -24,7 +24,7 @@ class Commit extends Base
     public function handle()
     {
         if ($this->checkIfCanIncrement('current', 'build')) {
-            $commit = app('pragmarx.version')->incrementCommit(
+            $commit = app('stepanenko3.version')->incrementCommit(
                 $this->option('increment-by')
             );
 

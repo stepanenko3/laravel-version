@@ -1,20 +1,20 @@
 <?php
 
-namespace PragmaRX\Version\Package;
+namespace Stepanenko3\Version\Package;
 
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider as IlluminateServiceProvider;
-use PragmaRX\Version\Package\Console\Commands\Absorb;
-use PragmaRX\Version\Package\Console\Commands\Commit;
-use PragmaRX\Version\Package\Console\Commands\Major;
-use PragmaRX\Version\Package\Console\Commands\Minor;
-use PragmaRX\Version\Package\Console\Commands\Patch;
-use PragmaRX\Version\Package\Console\Commands\Show;
-use PragmaRX\Version\Package\Console\Commands\Timestamp;
-use PragmaRX\Version\Package\Console\Commands\Version as VersionCommand;
-use PragmaRX\Version\Package\Support\Config;
-use PragmaRX\Version\Package\Support\Constants;
-use PragmaRX\Yaml\Package\Yaml;
+use Stepanenko3\Version\Package\Console\Commands\Absorb;
+use Stepanenko3\Version\Package\Console\Commands\Commit;
+use Stepanenko3\Version\Package\Console\Commands\Major;
+use Stepanenko3\Version\Package\Console\Commands\Minor;
+use Stepanenko3\Version\Package\Console\Commands\Patch;
+use Stepanenko3\Version\Package\Console\Commands\Show;
+use Stepanenko3\Version\Package\Console\Commands\Timestamp;
+use Stepanenko3\Version\Package\Console\Commands\Version as VersionCommand;
+use Stepanenko3\Version\Package\Support\Config;
+use Stepanenko3\Version\Package\Support\Constants;
+use Stepanenko3\Yaml\Package\Yaml;
 
 class ServiceProvider extends IlluminateServiceProvider
 {
@@ -38,21 +38,21 @@ class ServiceProvider extends IlluminateServiceProvider
      * @var array
      */
     protected $commandList = [
-        'pragmarx.version.command' => VersionCommand::class,
+        'stepanenko3.version.command' => VersionCommand::class,
 
-        'pragmarx.version.commit.command' => Commit::class,
+        'stepanenko3.version.commit.command' => Commit::class,
 
-        'pragmarx.version.show.command' => Show::class,
+        'stepanenko3.version.show.command' => Show::class,
 
-        'pragmarx.version.major.command' => Major::class,
+        'stepanenko3.version.major.command' => Major::class,
 
-        'pragmarx.version.minor.command' => Minor::class,
+        'stepanenko3.version.minor.command' => Minor::class,
 
-        'pragmarx.version.patch.command' => Patch::class,
+        'stepanenko3.version.patch.command' => Patch::class,
 
-        'pragmarx.version.absorb.command' => Absorb::class,
+        'stepanenko3.version.absorb.command' => Absorb::class,
 
-        'pragmarx.version.absorb.timestamp' => Timestamp::class,
+        'stepanenko3.version.absorb.timestamp' => Timestamp::class,
     ];
 
     /**
@@ -129,7 +129,7 @@ class ServiceProvider extends IlluminateServiceProvider
         Blade::directive(
             $this->config->get('blade-directive', 'version'),
             function ($format = Constants::DEFAULT_FORMAT) {
-                return "<?php echo app('pragmarx.version')->format($format); ?>";
+                return "<?php echo app('stepanenko3.version')->format($format); ?>";
             }
         );
     }
@@ -164,7 +164,7 @@ class ServiceProvider extends IlluminateServiceProvider
      */
     protected function registerService()
     {
-        $this->app->singleton('pragmarx.version', function () {
+        $this->app->singleton('stepanenko3.version', function () {
             $version = new Version($this->config);
 
             $version->setConfigFileStub($this->getConfigFileStub());

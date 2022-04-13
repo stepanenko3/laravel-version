@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-    <a href="https://packagist.org/packages/pragmarx/version"><img alt="Latest Stable Version" src="https://img.shields.io/packagist/v/pragmarx/version.svg?style=flat-square"></a>
+    <a href="https://packagist.org/packages/stepanenko3/version"><img alt="Latest Stable Version" src="https://img.shields.io/packagist/v/stepanenko3/version.svg?style=flat-square"></a>
     <a href="/antonioribeiro/version/blob/master/LICENSE.md"><img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square"></a>
     <a href="https://scrutinizer-version.com/g/antonioribeiro/version/?branch=master"><img alt="Code Quality" src="https://img.shields.io/scrutinizer/g/antonioribeiro/version.svg?style=flat-square"></a>
     <a href="https://scrutinizer-version.com/g/antonioribeiro/version/?branch=master"><img alt="Build" src="https://img.shields.io/scrutinizer/build/g/antonioribeiro/version.svg?style=flat-square"></a>
@@ -14,7 +14,7 @@
 <p align="center">
     <a href="https://scrutinizer-version.com/g/antonioribeiro/version/?branch=master"><img alt="Coverage" src="https://img.shields.io/scrutinizer/coverage/g/antonioribeiro/version.svg?style=flat-square"></a>
     <a href="https://styleci.io/repos/112244465"><img alt="StyleCI" src="https://styleci.io/repos/112244465/shield"></a>
-    <a href="https://packagist.org/packages/pragmarx/version"><img alt="Downloads" src="https://img.shields.io/packagist/dt/pragmarx/version.svg?style=flat-square"></a>
+    <a href="https://packagist.org/packages/stepanenko3/version"><img alt="Downloads" src="https://img.shields.io/packagist/dt/stepanenko3/version.svg?style=flat-square"></a>
 </p>
 
 ## Description
@@ -202,7 +202,7 @@ The best ways to instantiate it are:
 A simple PHP object instantiation:
 
 ``` php
-$version = new \PragmaRX\Version\Package\Version();
+$version = new \Stepanenko3\Version\Package\Version();
 
 dd(
     $version->format()
@@ -213,7 +213,7 @@ Or to get an already instantiated Version object from the container:
 
 ``` php
 dd(
-    app(\PragmaRX\Version\Package\Version::class)->format()
+    app(\Stepanenko3\Version\Package\Version::class)->format()
 );
 ```
 
@@ -304,7 +304,7 @@ Here's a community example on how to send the app version number when logging an
 
 namespace App\Exceptions;
 
-use PragmaRX\Version\Package\Version;
+use Stepanenko3\Version\Package\Version;
 use Bugsnag\BugsnagLaravel\Facades\Bugsnag;
 
 class Handler extends ExceptionHandler
@@ -368,10 +368,10 @@ Show the current app version:
 
 ``` text
 $ php artisan version:show
-PragmaRX version 1.0.0 (build 701031)
+Stepanenko3 version 1.0.0 (build 701031)
 
 $ php artisan version:show --format=compact
-PragmaRX v1.0.0-701031
+Stepanenko3 v1.0.0-701031
 
 $ php artisan version:show --format=compact --suppress-app-name
 v1.0.0-701031
@@ -437,13 +437,13 @@ You can test it online: https://regex101.com/r/Ly7O1x/42
 Via Composer
 
 ``` bash
-$ composer require pragmarx/version
+$ composer require stepanenko3/version
 ```
 
 Then publish the configuration file you'll have to:
 
 ``` bash
-$ php artisan vendor:publish --provider="PragmaRX\Version\Package\ServiceProvider"
+$ php artisan vendor:publish --provider="Stepanenko3\Version\Package\ServiceProvider"
 ```
 
 And you should be good to use it in your views:
@@ -498,8 +498,9 @@ rm composer.lock
 composer install
 ```
 
-## Author
+## Credits
 
+[Artem Stepanenko](http://twitter.com/stepanenko3)
 [Antonio Carlos Ribeiro](http://twitter.com/iantonioribeiro)
 
 ## License
@@ -509,6 +510,3 @@ This package is licensed under the MIT License - see the `LICENSE` file for deta
 ## Contributing
 
 Pull requests and issues are welcome.
-
-
-<!-- [![Downloads](https://img.shields.io/packagist/dt/pragmarx/version.svg?style=flat-square)](https://packagist.org/packages/pragmarx/version) --> 

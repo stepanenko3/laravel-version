@@ -1,6 +1,6 @@
 <?php
 
-namespace PragmaRX\Version\Package;
+namespace Stepanenko3\Version\Package;
 
 use Illuminate\Support\Facades\Facade as LaravelFacade;
 
@@ -13,6 +13,6 @@ class Facade extends LaravelFacade
      */
     protected static function getFacadeAccessor()
     {
-        return 'pragmarx.version';
+        return 'stepanenko3.version';
     }
 }
