@@ -1,17 +1,12 @@
 # Version
+
 ### Take control over your Laravel app version
 
-<p>
-    <a href="https://packagist.org/packages/stepanenko3/laravel-version"><img alt="Latest Stable Version" src="https://img.shields.io/packagist/v/stepanenko3/laravel-version.svg?style=flat-square"></a>
-    <a href="/antonioribeiro/version/blob/master/LICENSE.md"><img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square"></a>
-    <a href="https://scrutinizer-version.com/g/antonioribeiro/version/?branch=master"><img alt="Code Quality" src="https://img.shields.io/scrutinizer/g/antonioribeiro/version.svg?style=flat-square"></a>
-    <a href="https://scrutinizer-version.com/g/antonioribeiro/version/?branch=master"><img alt="Build" src="https://img.shields.io/scrutinizer/build/g/antonioribeiro/version.svg?style=flat-square"></a>
-    <a href="https://scrutinizer-version.com/g/antonioribeiro/version/?branch=master"><img alt="Coverage" src="https://img.shields.io/scrutinizer/coverage/g/antonioribeiro/version.svg?style=flat-square"></a>
-    <a href="https://styleci.io/repos/112244465"><img alt="StyleCI" src="https://styleci.io/repos/112244465/shield"></a>
-    <a href="https://packagist.org/packages/stepanenko3/laravel-version"><img alt="Downloads" src="https://img.shields.io/packagist/dt/stepanenko3/laravel-version.svg?style=flat-square"></a>
-</p>
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/stepanenko3/laravel-version.svg?style=flat-square)](https://packagist.org/packages/stepanenko3/laravel-version)
+[![Total Downloads](https://img.shields.io/packagist/dt/stepanenko3/laravel-version.svg?style=flat-square)](https://packagist.org/packages/stepanenko3/laravel-version)
+[![License](https://poser.pugx.org/stepanenko3/laravel-version/license)](https://packagist.org/packages/stepanenko3/laravel-version)
 
-Original repository https://github.com/antonioribeiro/version
+> Original repository https://github.com/antonioribeiro/version
 
 ## Description
 

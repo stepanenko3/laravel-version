@@ -1,4 +1,3 @@
-# Laravel App Version
+# Upgrading
 
-## to 0.1.0
-
+## To 1.0.0
